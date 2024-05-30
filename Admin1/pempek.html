@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin</title>
+    <!-- Favicon -->
+    <!-- Icons -->
+    <link href="./assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+    <link href="./assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="./assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+        <div class="container-fluid">
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main"
+                aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand -->
+            <a class="navbar-brand pt-0" href="./index.html">
+                <img src="./assets/img/brand/Logo.png" class="navbar-brand-img" alt="...">
+            </a>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+                <!-- Collapse header -->
+                <div class="navbar-collapse-header d-md-none">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="./index.html">
+                                <img src="./assets/img/brand/blue.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false"
+                                aria-label="Toggle sidenav">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="./index.html">
+                            <i class="ni ni-tv-2 text-black"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item  active ">
+                        <a class="nav-link  active " href="./pempek.html">
+                            <i class="ni ni-tv-2 text-black"></i> Pempek
+                        </a>
+                    </li>
+                </ul>
+                <!-- Navigation -->
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid text-center">
+                <!-- Brand -->
+                <h1 class="mb-0 text-black text-uppercase d-none d-lg-inline-block ">Pempek</h1>
+
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <!-- Header -->
+        <div class="header pb-8 pt-5 pt-md-8">
+            <div class="container-fluid">
+                <div class="header-body">
+
+                    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Menu</a>
+                    <!-- Card stats -->
+                    <div class="row d-flex justify-content-center ">
+                        <!-- taro card disini -->
+                        <div class="card menu mt-3 custom-margin-card" style="width: 18rem;">
+                            <img src="./assets/img/brand/Pempek1.png" class="card-img-top" alt="...">
+                            <div class="card-body card-menu">
+                                <div class="card-body custom-card-menu">
+                                    <h2 class="card-title mb-0 text-center ">Nama Pempek</h2>
+                                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Eos?</p>
+                                    <h3 class="text-center">RP 0.000/porsi</h3>
+
+                                    <div class="d-flex justify-content-center">
+
+                                        <a href="#" class="buton-edit btn btn-warning">Edit</a>
+                                        <a href="#" class="buton-delete btn btn-danger">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLabel">Tambah Menu</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                
+                <div class="mb-3">
+                    <label  for="recipient-name" class="col-form-label">Nama Pempek : </label>
+                    <input type="text" class="form-control">
+
+                </div>
+                <div class="mb-3">
+                    <label  for="recipient-name" class="col-form-label">Deskripsi : </label>
+                    <textarea type="text" class="form-control"> </textarea>
+
+                </div>
+                <div class="mb-3">
+                    <label  for="recipient-name" class="col-form-label">Harga : </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label  for="recipient-name" class="col-form-label">Kategori : </label>
+                    <select class="form-control" name="" id="">
+                        <option class="option" value="">Pempek</option>
+                        <option class="option" value="">Tekwan</option>
+                        <option class="option" value="">Mie</option>
+
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Gambar : </label>
+                    <input type="file" class="form-control">
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+        <!--   Core   -->
+        <script src="./assets/js/plugins/jquery/dist/jquery.min.js"></script>
+        <script src="./assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!--   Optional JS   -->
+        <script src="./assets/js/plugins/chart.js/dist/Chart.min.js"></script>
+        <script src="./assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
+        <!--   Argon JS   -->
+        <script src="./assets/js/argon-dashboard.min.js?v=1.1.2"></script>
+        <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+</body>
+
+</html>
